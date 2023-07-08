@@ -1,0 +1,183 @@
+﻿@model List<NiVi_Shop.Models.Product>
+
+
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@section head {
+    <script src="~/Publics/js/jquery-3.6.0.min.js"></script>
+    <script src="~/Publics/js/javascript.js"></script>
+    <link href="~/Publics/css/Cart.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.3.1.slim.min.js" />
+    @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" />*@
+    <link href="~/Publics/css/all.min.css?v=2" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-siJTwz0+0fqvBlYrEfgjmX9x0gJDM28a0HfADyh2+TQq6bsNCl6UOkfM10/0/b+ZZD6wUsKjTYsNzJVKXBRXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+}
+
+<div class="px-4 px-lg-0 custom">
+    <div class="container text-white py-5 text-center">
+        <h1 class="display-4">SHOPPING CART</h1>
+    </div>
+    <div class="pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+
+                    <!-- Shopping cart table -->
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="p-2 px-3 text-uppercase">Product</div>
+                                    </th>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="py-2 text-uppercase">Price</div>
+                                    </th>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="py-2 text-uppercase">Quantity</div>
+                                    </th>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="py-2 text-uppercase">Remove</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @if (Model == null || !Model.Any())
+                                {
+                                    <p>Giỏ hàng trống</p>
+                                }
+                                else
+                                {
+
+                                    foreach (var item in Model)
+                                    {
+
+                                        <tr>
+                                            <th scope="row" class="border-0">
+                                                <div class="p-2">
+                                                    <img src="@item.Image" alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                    <div class="ml-3 d-inline-block align-middle">
+                                                        @foreach (var item2 in ViewBag.CategoryName)
+                                                        {
+                                                            if (@item.CategoryID == @item2.CategoryID)
+                                                            {
+                                                                <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle"><strong>@item.Name</strong></a></h5><span class="text-muted font-weight-normal font-italic d-block">Category: @item2.CategoryName</span>
+                                                                break;
+                                                            }
+
+                                                        }
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td class="border-0 align-middle"><strong>$@item.Price</strong></td>
+                                            <td class="border-0 align-middle" data-quantity="@item.Quantity"><strong>@item.Quantity</strong></td>
+                                            <td class="border-0 align-middle"><a href="#" class="text-dark delete-item" data-product-id="@item.ProductID"><i class="fa fa-trash"></i></a></td>
+                                        </tr>
+                                    }
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End -->
+                </div>
+            </div>
+
+            <div class="row py-5 p-4 bg-white rounded shadow-sm">
+                <div class="col-lg-6">
+                    <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">
+                        <a href="@Url.Action("Index", "OrderDetail")">Products that have been Ordered</a>
+                    </div>
+                    <div class="p-4">
+                    </div>
+                    <div class="card px-4">
+                        <p class="h8 py-3">Payment Details</p>
+                        <div class="row gx-3">
+                            <div class="col-12">
+                                <div class="d-flex flex-column">
+                                    <p class="text mb-1">Person Name</p>
+                                    <input class="form-control mb-3" type="text" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-column">
+                                    <p class="text mb-1">Card Number</p>
+                                    <input class="form-control mb-3" type="text" placeholder="1234 5678 435678">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <p class="text mb-1">Expiry</p>
+                                    <input class="form-control mb-3" type="text" placeholder="MM/YYYY">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <p class="text mb-1">CVV/CVC</p>
+                                    <input class="form-control mb-3 pt-2 " type="password" placeholder="***">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">
+                                    <div class="btn btn-primary mb-3">
+                                        <span class="ps-3">Pay with another bank $@ViewBag.TotalPrice</span>
+                                        <span class="fas fa-arrow-right"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Order summary </div>
+                    <div class="p-4">
+                        <p class="font-italic mb-4">Shipping and additional costs are calculated based on values you have entered.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong><strong>$@ViewBag.TotalPrice</strong></li>
+                            <li class="d-flex justify-content-between py-3 border-bottom">
+                                <strong class="text-muted">Total</strong>
+                                <h5 class="font-weight-bold">$@ViewBag.TotalPrice</h5>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        @if (@Session["userID"] != null)
+                        {
+                            <a href="@Url.Action("PaymentWithPaypal", "TrangChu")">
+                                <div class="btn btn-primary mb-3">
+                                    <i class="fab fa-cc-paypal" style="font-size: 46px; color: white"></i>
+                                    <span class="ps-3">Pay with PAYPAL $@ViewBag.TotalPrice</span>
+                                    <span class="fas fa-arrow-right"></span>
+                                </div>
+                            </a>
+                            <a href="@Url.Action("OrderNotPay", "TrangChu")">
+                                <div class="btn btn-primary mb-3">
+                                    <i class="fab fa-cc-paypal" style="font-size: 46px; color: white"></i>
+                                    <span class="ps-3">ORDER $@ViewBag.TotalPrice</span>
+                                    <span class="fas fa-arrow-right"></span>
+                                </div>
+                            </a>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Login", "Login")">
+                                <div class="btn btn-primary mb-3">
+                                    <i class="fab fa-cc-paypal" style="font-size: 46px; color: white"></i>
+                                    <span class="ps-3">Please log in to continue</span>
+                                    <span class="fas fa-arrow-right"></span>
+                                </div>
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+

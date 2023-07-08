@@ -1,0 +1,257 @@
+﻿@model List<NiVi_Shop.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+@section head {
+    <script src="~/Publics/js/jquery-3.6.0.min.js"></script>
+    <script src="~/Publics/js/javascript.js"></script>
+    @*<link href="~/Publics/css/responsive.css" rel="stylesheet" />*@
+    @*<link href="~/Publics/css/main.css" rel="stylesheet" />*@
+    @*<link href="~/Publics/css/SHOP.css" rel="stylesheet" />*@
+    <link href="~/Publics/css/all.min.css" rel="stylesheet" />
+}
+
+
+
+<div class="main">
+    <div class="left wow">
+        <div class="left-affect">
+            <div class="left-1">
+                <a href="#"><span>New Collection</span></a>
+            </div>
+            <h2>Fill your home with uniqueness</h2>
+            <h3>Huge variety with modern glamour!</h3>
+            <div class="left-2">
+                <a href="#">Explore</a>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="right-inside">
+            <img src="~/Publics/image/ghế.jpg" />
+            <div class="plus1 pointer">
+                <i class="fas fa-plus"></i>
+                <span class="faded">White stone storage unit</span>
+            </div>
+            <div class="plus2 pointer">
+                <i class="fas fa-plus"></i>
+                <span class="faded">Small comfy yellow sofa</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="space">
+    <a href="#">! Use discount code: FIRSTIME to get <span style="color:#ff7012 ">10% off </span>your first order !</a>
+</div>
+<div class="container-main wow">
+    <div class="box1 container-all">
+        <div class="wraper">
+            <div class="box-space"></div>
+            <div class="colec">
+                <a href="#"><span>New Collection</span></a>
+            </div>
+            <div style="height: 41px"></div>
+            <h2>Lights & Decor</h2>
+            <div style="height: 50px"></div>
+            <div class="more">
+                <a href="#">
+                    <span>Show more</span>
+                    <span class="right-icon"><i class="fas fa-chevron-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="box2 container-all">
+        <div class="wraper">
+            <div class="box-space"></div>
+            <div style="height: 80px"></div>
+            <h2>Kitchen Cutlery</h2>
+            <div style="height: 50px"></div>
+            <div class="more">
+                <a href="#">
+                    <span>Show more</span>
+                    <span class="right-icon"><i class="fas fa-chevron-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="box3 container-all">
+        <div class="wraper">
+            <div class="box-space"></div>
+            <div class="sale">
+                <a href="#"><span>Sale</span></a>
+            </div>
+            <h2>Living Room</h2>
+            <div style="height: 50px"></div>
+            <div class="more">
+                <a href="#">
+                    <span>Show more</span>
+                    <span class="right-icon"><i class="fas fa-chevron-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-1">
+    <div class="container-1-flex">
+        <div class="container-1-flex-all">
+            <img src="~/Publics/image/mkit.png" />
+        </div>
+        <div class="container-1-flex-all">
+            <img src="~/Publics/image/canstudio.png" />
+        </div>
+        <div class="container-1-flex-all">
+            <img src="~/Publics/image/muscle.png" />
+        </div>
+        <div class="container-1-flex-all">
+            <img src="~/Publics/image/worf.png" />
+        </div>
+        <div class="container-1-flex-all">
+            <img src="~/Publics/image/beauty.png" />
+        </div>
+        <div class="container-1-flex-all">
+            <img src="~/Publics/image/balloon.png" />
+        </div>
+    </div>
+</div>
+<div class="container-2">
+    <div class="container-2-1">
+        <div class="plant">
+            <img src="~/Publics/image/chậu cây.png" />
+        </div>
+    </div>
+    <div class="container-2-2">
+        <div class="container-2-2-inside">
+            <div class="wraper1">
+                <h3>Our special offer</h3>
+                <div style="height: 20px;"></div>
+                <h2>Featured products with amazing color variety for your home</h2>
+                <div style="height: 55px;"></div>
+                <div class="purchase">
+                    <a href="#">
+                        <span>Purchase</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-3">
+    <div class="container-3-inner">
+        <div class="container-3-inner-wraper">
+            <i class="far fa-clock"></i>
+            <div style=" height: 37px;"></div>
+            <h2>24h Shipping</h2>
+            <div style="height: 15px"></div>
+            <p style="text-align: center;">We always support you to ship 24/7 when the order is confirmed. So please feel free to order, we will guarantee the shipping.</p>
+            <div style="height: 37px"></div>
+        </div>
+    </div>
+    <div class="container-3-inner line">
+        <div>
+            <div class="container-3-inner-wraper">
+                <i class="fas fa-shipping-fast"></i>
+                <div style=" height: 37px;"></div>
+                <h2>Free Returns</h2>
+                <div style="height: 15px"></div>
+                <p style="text-align: center;">If you feel that the items you ordered are not as good as shown in the pictures, you can return them for free.</p>
+                <div style="height: 37px"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-3-inner">
+        <div class="container-3-inner-wraper">
+            <i class="fas fa-wallet"></i>
+            <div style=" height: 37px;"></div>
+            <h2>100% Money Back Guarantee</h2>
+            <div style="height: 15px"></div>
+            <p style="text-align: center;">If you feel that our items are not of good quality or fit when you return them, you can contact us for a 100% refund.</p>
+            <div style="height: 37px"></div>
+        </div>
+    </div>
+</div>
+<div class="container-4">
+    <div class="container-4-inner wow">
+        <h2>Ideas for inspiration</h2>
+        <div style="height: 52px;"></div>
+        <div class="sofa">
+            <img src="~/Publics/image/sofa.jpg" />
+            <div class="sofa-pointer-all sofa-pointer-1">
+                <i class="fas fa-plus"></i>
+                <span class="faded">Sea themed throw pillow</span>
+            </div>
+            <div class="sofa-pointer-all sofa-pointer-2">
+                <i class="fas fa-plus"></i>
+                <span class="faded">Small comfy yellow sofa</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-5">
+    <div class="container-5-inner container-5-left">
+        <div style=" width: 100%; max-width: 501px; margin-left: 0; margin-right: auto;" class="container-5-left-inner">
+            <h2>Find the closest store to your location</h2>
+            <div style="font-size: 15px;"><p>Nivi has many branches and professional staff, find the closest branch to your location.</p></div>
+        </div>
+    </div>
+    <div class="container-5-inner container-5-right">
+        <div class="Find">
+            <a href="#">
+                <span>Find now</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container-6 wow">
+    <div class="container-6-top">
+        <div style="width: 100%; max-width: 350px;margin-left: auto; margin-right:auto; text-align: center;" class="container-6-top-inner">
+            <h2>Great deals for great prices</h2>
+        </div>
+    </div>
+    <div class="container-6-bottom">
+        <div class="container-6-bottom-inner">
+            <div class="container-6-bottom-inner-1">
+                @foreach (var product in Model)
+                {
+                    <div class="container-6-bottom-all">
+                        <a href="@Url.Action("ProductDetails", "TrangChu", new { id = product.ProductID })">
+                            <div>
+                                <img src="@product.Image" />
+                            </div>
+                        </a>
+                        <div>
+                            <h2>@product.Name</h2>
+                        </div>
+                        <span>$ <bdi>@product.Price</bdi></span>
+                        <a class="shop" data-id="@product.ProductID">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-7">
+    <div class="container-7-wrapper">
+        <div style=" width: 100%; max-width: 600px; margin-left: auto; margin-right: auto;" class="container-7-wrapper-inner">
+            <h2>Join the newsletter</h2>
+            <p>If you feel that the items of the SHOP are beautiful, please join US</p>
+            <div class="container-7-wrapper-inner-input">
+                <input type="email" placeholder="Please enter your email here" class="input-1">
+                <input type="submit" value="Subscribe" class="input-2">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="go-to-top">
+    <a class="go-to-top-inside" href="javascript:;">
+        <i class="fas fa-angle-up"></i>
+    </a>
+</div>
+
+
