@@ -2,7 +2,7 @@
 1.	Giới thiệu đề tài
 Ni’Vi Shop - Website về bán hàng nội thất được thiết kế để mang lại trải nghiệm mua sắm thú vị cho khách hàng với giao diện thân thiện và dễ sử dụng. Trang web được thiết kế với mục đích mang đến cho khách hàng một trải nghiệm mua sắm trực tuyến tuyệt vời, từ việc tìm kiếm sản phẩm dễ dàng đến quá trình thanh toán thuận tiện và an toàn.Web cho khách hàng xem chi tiết sản phẩm, tìm kiếm sản phẩm, thêm, xóa sản phẩm, sửa số lượng sản phẩm trong giỏ hàng và website cung cấp các phương thức để liên hệ với nhân viên Ni’Vi nếu cần giúp đỡ. Với sự đa dạng, chất lượng và tiện lợi, Ni’Vi Shop rất hy vọng sẽ giúp khách hàng tìm được những sản phẩm ưng ý và mang lại không gian sống hoàn hảo cho gia đình.
 Website shop bán hàng nội thất online – Ni’Vi Shop của nhóm em được lập trình bằng ngôn ngữ lập trình C#, chạy trên nền .Net Framework và kết nối bằng cơ sở SQL Server. 
-2.	Các bước thực hiện đề tài
+3.	Các bước thực hiện đề tài
 -	Thiết kế giao diện trang web bán hàng nội thất Ni’Vi Shop
 -	Thiết kế cơ sở dữ liệu để lưu trữ thông tin của sản phẩm (Products), nhà cung cấp (Supplier), bình luận (Comment), đơn hàng (Orders), chi tiết đơn hàng (OrderDetail), khách hàng (Users), vai trò (Role), loại sản phẩm (Categories).  
 -	Tạo các chức năng cho website bán hàng.
