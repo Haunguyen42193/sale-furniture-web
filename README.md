@@ -102,7 +102,7 @@ Website shop bán hàng nội thất online – Ni’Vi Shop của nhóm em đư
 
 -	Bình luận sản phẩm.
 
-![image](https://github.com/Haunguyen42193/sale-furniture-web/assets/92702518/d3dbc13a-c5cd-4651-a793-56d003522fee)
+![image](https://github.com/Haunguyen42193/sale-furniture-web/assets/92702518/2a0ba952-0918-456d-90f4-5ce6a6c49435)
 
 -	Đăng nhập và đăng ký tài khoản.
 
