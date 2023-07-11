@@ -66,10 +66,6 @@ Website shop bán hàng nội thất online – Ni’Vi Shop của nhóm em đư
 
 ![image](https://github.com/Haunguyen42193/sale-furniture-web/assets/92702518/0ca770ca-c873-4181-badd-6495dce4052b)
 
--	Theo dõi đơn hàng và cập nhật trạng thái đơn hàng.
-
-![image](https://github.com/Haunguyen42193/sale-furniture-web/assets/92702518/b6a57a86-9a0d-4373-8a81-98e79013c0ad)
-
 -	Thống kê doanh thu trên từng lọai sản phẩm, thống kê số lượng bán ra trên từng loại sản phẩm.
 
 ![image](https://github.com/Haunguyen42193/sale-furniture-web/assets/92702518/60211566-5348-44eb-81c2-a037be816347)
@@ -98,11 +94,11 @@ Website shop bán hàng nội thất online – Ni’Vi Shop của nhóm em đư
 
 ![image](https://github.com/Haunguyen42193/sale-furniture-web/assets/92702518/e95e5fb7-fffc-4ad7-891b-68a6dcf831a9)
 
+-	Theo dõi đơn hàng và cập nhật trạng thái đơn hàng.
+
+![image](https://github.com/Haunguyen42193/sale-furniture-web/assets/92702518/b6a57a86-9a0d-4373-8a81-98e79013c0ad)
+
 3.2	Chức năng của Customer
-
--	Bình luận sản phẩm.
-
-![image](https://github.com/Haunguyen42193/sale-furniture-web/assets/92702518/2a0ba952-0918-456d-90f4-5ce6a6c49435)
 
 -	Đăng nhập và đăng ký tài khoản.
 
@@ -118,6 +114,10 @@ Website shop bán hàng nội thất online – Ni’Vi Shop của nhóm em đư
 
 ![image](https://github.com/Haunguyen42193/sale-furniture-web/assets/92702518/2e4d1e66-52d0-4b8a-9d44-229ff3f183ea)
 
+-	Bình luận sản phẩm.
+
+![image](https://github.com/Haunguyen42193/sale-furniture-web/assets/92702518/2a0ba952-0918-456d-90f4-5ce6a6c49435)
+
 -	Cho phép khách hàng xem những đơn đặt hàng đã thanh toán online
 
 ![image](https://github.com/Haunguyen42193/sale-furniture-web/assets/92702518/b282a32f-fab9-47ad-8ffd-7a37ef5e23ab)
@@ -125,7 +125,6 @@ Website shop bán hàng nội thất online – Ni’Vi Shop của nhóm em đư
 -	Giao diện giỏ hàng.
 
 ![image](https://github.com/Haunguyen42193/sale-furniture-web/assets/92702518/3b14cf73-39a3-4aed-ae1a-f5f2c8a68d1e)
-
 
 -	Thanh toán online với paypal.
 
