@@ -43,13 +43,16 @@ Website shop bán hàng nội thất online – Ni’Vi Shop của nhóm em đư
 4.1 Mô tả chức năng
 
 4.1.1	Chức năng của Admin
+
 -	Theo dõi đơn hàng và cập nhật trạng thái đơn hàng.
 -	Thống kê doanh thu trên từng lọai sản phẩm, thống kê số lượng bán ra trên từng loại sản phẩm.
 -	Hiển thị, thêm, sửa, xóa sản phẩm.
 -	Hiển thị, thêm, sửa, xóa nhà cung cấp.
 -	Hiển thị, thêm, sửa, xóa người dùng.
 -	Xóa những comment (Các comment được nhận định là tiêu cực).
+
 4.1.2	Chức năng của Customer
+
 -	Bình luận sản phẩm.
 -	Đăng nhập và đăng ký tài khoản.
 -	Hiển thị sản phẩm và danh mục sản phẩm.
@@ -97,8 +100,6 @@ Website shop bán hàng nội thất online – Ni’Vi Shop của nhóm em đư
 -	Theo dõi đơn hàng và cập nhật trạng thái đơn hàng.
 
 ![image](https://github.com/Haunguyen42193/sale-furniture-web/assets/92702518/b6a57a86-9a0d-4373-8a81-98e79013c0ad)
-
-3.2	Chức năng của Customer
 
 -	Đăng nhập và đăng ký tài khoản.
 
